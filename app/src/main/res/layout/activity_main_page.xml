@@ -1,0 +1,156 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp" tools:context=".MainPage"
+    android:background="#2a2eff"
+    android:name="MainPage"
+    android:label="@string/activity_main_page">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:id="@+id/LogOutbutton"
+        android:clickable="true"
+        android:onClick="title_activity_logout_screen"
+        android:maxHeight="50dp"
+        android:minHeight="15dp"
+        android:minWidth="25dp"
+        android:maxWidth="100dp"
+        android:maxLines="1"
+        android:textSize="5dp"
+        android:layout_alignBottom="@+id/frameLayout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="52dp"
+        android:minHeight="52dp"
+        android:background="#000000"
+        android:id="@+id/frameLayout"
+        android:layout_marginTop="19dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/LogOutbutton"
+        android:layout_toStartOf="@+id/LogOutbutton">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ProfileimageButton"
+            android:minHeight="50dp"
+            android:minWidth="50dp"
+            android:nestedScrollingEnabled="false"
+            android:onClick="title_activity_activity_user_profile"
+            android:clickable="true"
+            android:background="@drawable/images"
+            android:layout_below="@+id/frameLayout"
+            android:layout_alignLeft="@+id/frameLayout"
+            android:layout_alignStart="@+id/frameLayout"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="1dp"/>
+    </FrameLayout>
+
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_below="@+id/frameLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1500dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginBottom="1dp"
+        android:backgroundTint="#0b0b0b" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Project Progress Tracker"
+        android:id="@+id/textView"
+        android:minHeight="50dp"
+        android:layout_alignTop="@+id/frameLayout"
+        android:layout_centerHorizontal="true" />
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp"
+        android:background="#000000">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Task"
+            android:id="@+id/textView2"
+            android:layout_above="@+id/LogOutbutton"
+            android:layout_alignLeft="@+id/listView"
+            android:layout_alignStart="@+id/listView"
+            android:background="#2a2eff"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="1dp"
+            android:textIsSelectable="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Schedule"
+            android:id="@+id/textView6"
+            android:layout_below="@+id/textView2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center"
+            android:background="#2a2eff"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Projects"
+            android:id="@+id/textView5"
+            android:layout_above="@+id/textView2"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_alignStart="@+id/textView2"
+            android:layout_gravity="center_horizontal|bottom"
+            android:background="#2a2eff"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp"/>
+
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="100dp"
+        android:minWidth="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/LogOutbutton"
+        android:layout_marginTop="50dp">
+
+
+        <Spinner
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:id="@+id/spinner"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:clickable="true"
+            android:text="Projects"/>
+    </FrameLayout>
+
+</RelativeLayout>
