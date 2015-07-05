@@ -17,10 +17,11 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
         <activity
             android:name=".MainPage"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:screenOrientation="sensorLandscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -30,18 +31,21 @@
         <activity
             android:name=".logout_screen"
             android:label="@string/title_activity_logout_screen"
-            android:parentActivityName=".MainPage" >
+            android:parentActivityName=".MainPage"
+            android:screenOrientation="sensorLandscape">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.usnbik.project_progress_tracker.MainPage" />
         </activity>
         <activity
             android:name=".activity_logon_screen"
-            android:label="@string/title_activity_activity_logon_screen" >
+            android:label="@string/title_activity_activity_logon_screen"
+            android:screenOrientation="sensorLandscape">
         </activity>
         <activity
             android:name=".activity_user_profile"
-            android:label="@string/title_activity_activity_user_profile" >
+            android:label="@string/title_activity_activity_user_profile"
+            android:screenOrientation="sensorLandscape">
         </activity>
 
         <meta-data
@@ -50,7 +54,8 @@
 
         <activity
             android:name=".UserProjectTask"
-            android:label="@string/title_activity_user_project_task" >
+            android:label="@string/title_activity_user_project_task"
+            android:screenOrientation="sensorLandscape">
         </activity>
     </application>
 
